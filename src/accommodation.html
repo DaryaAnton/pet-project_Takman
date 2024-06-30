@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>takman</title>
+</head>
+<body>
+    <!--main-->
+    <section class="main-accommodation">
+        <!--header-->
+        <div class="header">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+
+        <!--nav-->
+        <div class="nav">
+            <ul class="nav__table">
+                <li class="nav__link">
+                    <a href="skiing.html">Катание</a>
+                </li>
+                <li class="nav__link">
+                    <a href="accommodation.html">Проживание</a>
+                </li>
+                <li class="nav__link">
+                    <a href="services.html">Услуги</a>
+                </li>
+                <li class="nav__link">
+                    <a href="pricing.html">Цены</a>
+                </li>
+                <li class="nav__link">
+                    <a href="tour.html">Как добраться</a>
+                </li>
+                <li class="nav__link">
+                    <a href="information.html">Информация</a>
+                </li>
+                <li class="nav__link">
+                    <a href="summer.html"><span>Лето</span>
+                        <img src="img/main/main_icon/sun.svg" alt="sun">
+                    </a>
+                </li>
+            </ul>
+        </div><!--/nav-->
+
+            <div class="header__social">
+                <div class="header__icon">
+                    <img src="img/main/main_icon/vk.svg" alt="vk">
+                    <img src="img/main/main_icon/whatsapp.svg" alt="whatsapp">
+                    <img src="img/main/main_icon/instagram.svg" alt="instagram">
+                </div>
+                <a href="buy-online.html" class="btn__border btn__border_social">Купить онлайн</a>
+            </div>
+
+            <!--/burger-->
+            <div class="header__burger" data-hystmodal="#modalNav">
+                <span></span>
+            </div><!--/burger-->
+            <!--hystmodal-->
+            <div class="hystmodal" id="modalNav" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                    <div class="hystmodal__window" role="dialog" aria-modal="true">
+                        <button data-hystclose class="hystmodal__close">Закрыть</button>
+                        <div class="hystmodal-wrapper">
+                            <ul class="hystmodal-list">
+                                <li class="hystmodal-paragraph">
+                                    <a href="skiing.html">Катание</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="accommodation.html">Проживание</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="services.html">Услуги</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="pricing.html">Цены</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="tour.html">Как добраться</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="information.html">Информация</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="summer.html"><span>Лето</span><img src="img/main/main_icon/sun.svg" alt="sun"></a>
+                                </li>
+                            </ul>
+
+                            <a href="buy-online.html" class="btn__border">Купить онлайн</a>
+
+                            <div class="hystmodal-social">
+                                <a href="#">
+                                    <img src="img/main/main_icon/vk.svg" alt="vk">
+                                </a>
+                                <a href="#">
+                                    <img src="img/main/main_icon/whatsapp.svg" alt="whatsapp">
+                                </a>
+                                <a href="#">
+                                    <img src="img/main/main_icon/instagram.svg" alt="instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/hystmodal-->
+        </div><!--/header-->
+
+        <div class="main__cover">
+            <h1 class="main__title">Проживание на «Такмане»</h1>
+            <p class="main__text">
+                Горнолыжный курорт «Такман» — место отдыха, которое идеально подходит для выходных в компании друзей или семьи. Здесь есть все условия, необходимые для комфортного отдыха — оборудованные горнолыжные склоны, спортивный инвентарь, бани, развлекательные комнаты и панорамное кафе.  
+            </p>
+        </div>
+    </section><!--/main-->
+
+    <!--banner-->
+    <section class="banner">
+        <h2 class="banner__title">Бронирование коттеджа</h2>
+        <div class="banner__reservation">
+            <input class="banner__input" type="text" id="datepicker" placeholder="Заезд">
+            <input class="banner__input" type="text" id="datepicker2" placeholder="Выезд">
+            <div>
+                <select class="banner__list">
+                    <option value="2 человека">2 человека</option>
+                    <option value="3 человека">3 человека</option>
+                    <option value="4 человека">4 человека</option>
+                </select>
+            </div>
+            <a href="services.html" class="btn__light">Найти</a>
+        </div>
+    </section><!--/banner-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_bear">
+            <h3 class="promo__poster-title">Медвежий холл</h3>
+            <h5 class="promo__poster-subtitle">21 место, от 1700₽ за сутки</h5>
+            <a href="accommodation.html" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_squirrel">
+            <h3 class="promo__poster-title">Белая белка</h3>
+            <h5 class="promo__poster-subtitle">20 мест, от 1700₽ за сутки</h5>
+            <a href="accommodation.html" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_owl">
+            <h3 class="promo__poster-title">Сова</h3>
+            <h5 class="promo__poster-subtitle">6 мест, от 2300₽ за сутки</h5>
+            <a href="accommodation.html" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_fox">
+            <h3 class="promo__poster-title">Лисья нора</h3>
+            <h5 class="promo__poster-subtitle">6 мест, от 2300₽ за сутки</h5>
+            <a href="accommodation.html" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_deer">
+            <h3 class="promo__poster-title">Олений ручей</h3>
+            <h5 class="promo__poster-subtitle">12 мест, от 2300₽ за сутки</h5>
+            <a href="accommodation.html" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--banner-->
+    <section class="banner">
+        <h2 class="banner__title">Бронирование номера в Ski Motel</h2>
+        <div class="banner__reservation">
+            <input class="banner__input" type="text" id="datepicker-sky" placeholder="Заезд">
+            <input class="banner__input" type="text" id="datepicker-sky2" placeholder="Выезд">
+            <div>
+                <select class="banner__list">
+                    <option value="2 человека">2 человека</option>
+                    <option value="3 человека">3 человека</option>
+                    <option value="4 человека">4 человека</option>
+                </select>
+            </div>
+            <a href="#" class="btn__light">Найти</a>
+        </div>
+    </section><!--/banner-->
+
+    <!--promo-->
+    <section class="promo">
+        <div class="promo__poster promo__poster_ski-motel">
+            <h3 class="promo__poster-title">Ski Motel</h3>
+            <h5 class="promo__poster-subtitle">96 мест, от 1000₽ за сутки</h5>
+            <a href="#" class="btn__light">Подробнее</a>
+        </div>
+    </section><!--/promo-->
+
+    <!--info-->
+    <section class="info">
+        <div class="info__timetable">
+            <div class="info__timetable-title">График работы</div>
+            <div class="info__timetable-cover">
+                <div class="info__timetable-inner">
+                    <div class="info__timetable-department">Администрация</div>
+                    <div class="info__timetable-date">Ежедневно</div>
+                    <div class="info__timetable-time">с 9:00 до 23:00</div>
+                </div>
+                <div class="info__timetable-inner">
+                    <div class="info__timetable-department">Кафе</div>
+                    <div class="info__timetable-date">Ежедневно</div>
+                    <div class="info__timetable-time">с 9:00 до 23:00</div>
+                </div>
+            </div>
+
+            <div class="info__timetable-cover">
+                <div class="info__timetable-inner">
+                    <div class="info__timetable-department">Прокат</div>
+                    <div class="info__timetable-date">Ежедневно</div>
+                    <div class="info__timetable-time">с 9:00 до 23:00</div>
+                </div>
+                <div class="info__timetable-inner">
+                    <div class="info__timetable-department">Инструкторы</div>
+                    <div class="info__timetable-date">Ежедневно</div>
+                    <div class="info__timetable-time">с 9:00 до 23:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="info__path">
+            <div class="info__path-title">Как добраться</div>
+            <hr>
+            <div class="info__path-text">
+                Скорый электропоезд "Ласточка" довезет Вас до Чусового,где производится пересадка на автобусный трансфер до Горнолыжного курорта "Такман".
+            </div>
+        </div>
+    </section><!--/info-->
+
+    <!--map-->
+    <section class="map">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/20712/chusovoy/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чусовой</a><a href="https://yandex.ru/maps/20712/chusovoy/?ll=57.830306%2C58.310331&mode=routes&rtext=58.269898%2C57.804091~58.352873%2C57.773890&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTM1MzczMzA3ElDQoNC-0YHRgdC40Y8sINCf0LXRgNC80YHQutC40Lkg0LrRgNCw0LksINCn0YPRgdC-0LLQvtC5LCDRg9C70LjRhtCwINCc0LjRgNCwLCAxNyIKDWU3Z0IVYBRpQg%2C%2C~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxODk0OTgyMzgxEosB0KDQvtGB0YHQuNGPLCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCDQp9GD0YHQvtCy0YHQutC-0Lkg0LPQvtGA0L7QtNGB0LrQvtC5INC-0LrRgNGD0LMsINCz0L7RgNC90L7Qu9GL0LbQvdGL0Lkg0LrRg9GA0L7RgNGCINCi0LDQutC80LDQvSIKDXYYZ0IVWGlpQg%2C%2C&utm_medium=mapframe&utm_source=maps&z=12.59" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=57.830306%2C58.310331&mode=routes&rtext=58.269898%2C57.804091~58.352873%2C57.773890&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTM1MzczMzA3ElDQoNC-0YHRgdC40Y8sINCf0LXRgNC80YHQutC40Lkg0LrRgNCw0LksINCn0YPRgdC-0LLQvtC5LCDRg9C70LjRhtCwINCc0LjRgNCwLCAxNyIKDWU3Z0IVYBRpQg%2C%2C~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxODk0OTgyMzgxEosB0KDQvtGB0YHQuNGPLCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCDQp9GD0YHQvtCy0YHQutC-0Lkg0LPQvtGA0L7QtNGB0LrQvtC5INC-0LrRgNGD0LMsINCz0L7RgNC90L7Qu9GL0LbQvdGL0Lkg0LrRg9GA0L7RgNGCINCi0LDQutC80LDQvSIKDXYYZ0IVWGlpQg%2C%2C&z=12.59" width="100%" height="490" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section><!--/map-->
+
+    <!--footer-->
+    <section class="footer">
+        <div class="footer__contacts">
+            <div class="footer__contacts-title">Контакты</div>
+            <div class="footer__contacts-address">618206, Пермский край, г. Чусовой, ул. Мира, 17, оф. 401</div>
+            <a href="#" class="footer__contacts-email">takman59@mail.ru</a href="#">
+            <a href="#" class="footer__contacts-phone">+7 (342) 256-95-83</a href="#">
+        </div>
+
+        <div class="footer__main">
+            <img class="footer__main-logo" src="img/logo.svg" alt="logo">
+            <a href="#" class="footer__main-link">Правила пользования услугами курорта</a>
+            <a href="#" class="footer__main-link">Политика в отношении обработки персональных данных</a>
+            <p class="footer__main-copyright">© ООО «Движение» 2023. Все права защищены.</p>
+        </div>
+    </section><!--/footer-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/hystmodal.min.js"></script>
+</body>
+</html>

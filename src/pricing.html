@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>takman</title>
+</head>
+<body>
+    <!--main-->
+    <section class="main-pricing">
+        <!--header-->
+        <div class="header">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+
+        <!--nav-->
+        <div class="nav">
+            <ul class="nav__table">
+                <li class="nav__link">
+                    <a href="skiing.html">Катание</a>
+                </li>
+                <li class="nav__link">
+                    <a href="accommodation.html">Проживание</a>
+                </li>
+                <li class="nav__link">
+                    <a href="services.html">Услуги</a>
+                </li>
+                <li class="nav__link">
+                    <a href="pricing.html">Цены</a>
+                </li>
+                <li class="nav__link">
+                    <a href="tour.html">Как добраться</a>
+                </li>
+                <li class="nav__link">
+                    <a href="information.html">Информация</a>
+                </li>
+                <li class="nav__link">
+                    <a href="summer.html"><span>Лето</span>
+                        <img src="img/main/main_icon/sun.svg" alt="sun">
+                    </a>
+                </li>
+            </ul>
+        </div><!--/nav-->
+
+            <div class="header__social">
+                <div class="header__icon">
+                    <img src="img/main/main_icon/vk.svg" alt="vk">
+                    <img src="img/main/main_icon/whatsapp.svg" alt="whatsapp">
+                    <img src="img/main/main_icon/instagram.svg" alt="instagram">
+                </div>
+                <a href="buy-online.html" class="btn__border btn__border_social">Купить онлайн</a>
+            </div>
+
+            <!--/burger-->
+            <div class="header__burger" data-hystmodal="#modalNav">
+                <span></span>
+            </div><!--/burger-->
+            <!--hystmodal-->
+            <div class="hystmodal" id="modalNav" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                    <div class="hystmodal__window" role="dialog" aria-modal="true">
+                        <button data-hystclose class="hystmodal__close">Закрыть</button>
+                        <div class="hystmodal-wrapper">
+                            <ul class="hystmodal-list">
+                                <li class="hystmodal-paragraph">
+                                    <a href="skiing.html">Катание</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="accommodation.html">Проживание</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="services.html">Услуги</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="pricing.html">Цены</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="tour.html">Как добраться</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="information.html">Информация</a>
+                                </li>
+                                <li class="hystmodal-paragraph">
+                                    <a href="summer.html"><span>Лето</span><img src="img/main/main_icon/sun.svg" alt="sun"></a>
+                                </li>
+                            </ul>
+
+                            <a href="buy-online.html" class="btn__border">Купить онлайн</a>
+
+                            <div class="hystmodal-social">
+                                <a href="#">
+                                    <img src="img/main/main_icon/vk.svg" alt="vk">
+                                </a>
+                                <a href="#">
+                                    <img src="img/main/main_icon/whatsapp.svg" alt="whatsapp">
+                                </a>
+                                <a href="#">
+                                    <img src="img/main/main_icon/instagram.svg" alt="instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/hystmodal-->
+        </div><!--/header-->
+
+        <div class="main__cover">
+            <h1 class="main__title">Проживание на «Такмане»</h1>
+            <p class="main__text">
+                Вашему выбору 5 коттеджей и SkiMotel. Цены от 1000₽
+            </p>
+            <a href="accommodation.html" class="btn__light">Забронировать</a>
+        </div>
+    </section><!--/main-->
+
+    <section class="tags">
+        <div class="tags__wrapper">
+            <h2 class="tags__title">Прайс на проживание 2023</h2>
+            <div class="mycustom-scroll" data-mcs-theme="3d-dark">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table__top table__top_vertical" scope="col"><span>Гостиница</span></th>
+                            <th class="table__up" scope="col"><span>Тип номера</span></th>
+                            <th class="table__up" scope="col"><span>Количество номеров</span></th>
+                            <th class="table__up" scope="col">Будни<br><span>Цена за номер, ₽</span></th>
+                            <th class="table__up" scope="col"><span>Цена за весь коттедж, ₽</span></th>
+                            <th class="table__up" scope="col">Выходные<br><span>Цена за номер, ₽</span></th>
+                            <th class="table__up" scope="col"><span>Цена за весь коттедж, ₽</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="table__top" scope="row">Медвежий холл<br><span>21 место</span></th>
+                            <td class="table__point">Двухместный<br>Трехместный</td>
+                            <td class="table__point">3 номера<br>5 номеров</td>
+                            <td class="table__point">3 000<br>3 500</td>
+                            <td class="table__point"><span>25 000</span> 24 000 При бронирование на двое суток</td>
+                            <td class="table__point">4 000<br>4 500</td>
+                            <td class="table__point">33 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top" scope="row">Белая белка<br><span>20 мест</span></th>
+                            <td class="table__point">Трехместный<br>Четырехместный</td>
+                            <td class="table__point">4 номера<br>2 номеров</td>
+                            <td class="table__point">3 500<br>4 500</td>
+                            <td class="table__point">22 000</td>
+                            <td class="table__point">4 500<br>5 500</td>
+                            <td class="table__point">28 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top" scope="row">Лисья нора<br><span>6 мест</span></th>
+                            <td class="table__point">Двухместный</td>
+                            <td class="table__point">3 номера</td>
+                            <td class="table__point">3 700</td>
+                            <td class="table__point">10 000</td>
+                            <td class="table__point">4 700</td>
+                            <td class="table__point">13 500</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top" scope="row">Сова<br><span>8 мест</span></th>
+                            <td class="table__point">Двухместный</td>
+                            <td class="table__point">4 номера</td>
+                            <td class="table__point">3 700</td>
+                            <td class="table__point">14 000</td>
+                            <td class="table__point">4 700</td>
+                            <td class="table__point">18 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top" scope="row">Олений ручей<br><span>8 мест</span></th>
+                            <td class="table__point">Двухместный</td>
+                            <td class="table__point">6 номера</td>
+                            <td class="table__point">4 500</td>
+                            <td class="table__point">25 500</td>
+                            <td class="table__point">5 500</td>
+                            <td class="table__point">34 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top" scope="row">Ski Motel<br><span>96 мест</span></th>
+                            <td class="table__point">Двухместный<br>Трехместный<br>Четырехместный</td>
+                            <td class="table__point">12 номеров<br>13 номеров<br>6 номеров</td>
+                            <td class="table__point">1 900 <span>(800 место)</span><br>2 500 <span>(800 место)</span><br>3 000 <span>(800 место)</span></td>
+                            <td class="table__point">-</td>
+                            <td class="table__point">2 500 <span>(1000 место)</span><br>3 000 <span>(1000 место)</span><br>3 500 <span>(1000 место)</span></td>
+                            <td class="table__point">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="tags__list">
+                <li class="tags__point">Примечания:</li>
+                <li class="tags__point">1. Гостиница предоставляет Гостям номера для временного проживания.</li>
+                <li class="tags__point">2. Режим работы гостиницы – круглосуточный. Время заезда - с 15.00 часов местного времени, время отъезда до 14.00 (в зимний период), время заезда - с 14.00 часов местного времени, время отъезда до 13.00 часов местного времени (в летний период).</li>
+                <li class="tags__point">3. При заселении Гостю необходимо иметь при себе документ, удостоверяющий личность, заполнить и подписать анкету, установленного образца, сдать анкету администратору По окончанию периода проживания Гостю необходимо уведомить администратора о выезде из номера и сдать ключи.</li>
+                <li class="tags__point"> 4. В целях соблюдения правил пожарной безопасности гостям, проживающим в гостиницах, запрещается:</li>
+                <li class="tags__point">- Пользоваться в номерах нештатными электронагревательными приборами, удлинителями, переходниками и т.д. Микроволновой печью и чайником можно воспользоваться в специальной кухонной зоне.</li>
+                <li class="tags__point">- Хранить и приносить в номера огнеопасные и легковоспламеняющиеся материалы, ядовитые вещества.</li>
+                <li class="tags__point">- Не оставляйте в гостинице ценные предметы.</li>
+                <li class="tags__point">- Уходя из номера, оставлять включенными электроприборы.</li>
+                <li class="tags__point">- Курить в номерах на территории гостиниц. Основание- закон №15-ФЗ «Об охране здоровья граждан от воздействия окружающего табачного дыма и последствий потребления табака». - Пользоваться в номерах и общественных зонах - кальяном.</li>
+                <li class="tags__point">- Оставлять посторонних лиц в номере в своё отсутствие.</li>
+                <li class="tags__point">- Находиться посторонним лицам в гостиничном номере с 23-00 до наступления расчетного часа без предъявления документа, удостоверяющего его личность. При   несоблюдении правил пребывание в гостинице может быть ограничено или прервано. </li>
+                <li class="tags__point">- Нарушать покой проживающих после 23.00. </li>
+                <li class="tags__point">- Нарушать санитарные нормы и требования в гостиничном номере. </li>
+                <li class="tags__point">- Выбрасывать мусор, бутылки и другие предметы из окон гостиниц.</li>
+                <li class="tags__point">- Выносить белье, полотенца и инвентарь из номера.</li>
+                <li class="tags__point">- Размещение животных в гостиницах категорически запрещено.</li>
+            </ul>
+        </div>
+
+
+        <div class="tags__wrapper tags__wrapper_dark">
+            <h2 class="tags__title tags__title_dark">Прайс на проживание 2023</h2>
+            <div class="mycustom-scroll" data-mcs-theme="3d-dark">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table__top table__top_vertical table__top_dark" scope="col"><span>Гостиница</span></th>
+                            <th class="table__up table__up_dark" scope="col"><span>Тип номера</span></th>
+                            <th class="table__up table__up_dark" scope="col"><span>Количество номеров</span></th>
+                            <th class="table__up table__up_dark" scope="col">Будни<br><span>Цена за номер, ₽</span></th>
+                            <th class="table__up table__up_dark" scope="col"><span>Цена за весь коттедж, ₽</span></th>
+                            <th class="table__up table__up_dark" scope="col">Выходные<br><span>Цена за номер, ₽</span></th>
+                            <th class="table__up table__up_dark" scope="col"><span>Цена за весь коттедж, ₽</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Медвежий холл<br><span>21 место</span></th>
+                            <td class="table__point table__point_dark">Двухместный<br>Трехместный</td>
+                            <td class="table__point table__point_dark">3 номера<br>5 номеров</td>
+                            <td class="table__point table__point_dark">3 000<br>3 500</td>
+                            <td class="table__point table__point_dark"><span>25 000</span> 24 000 При бронирование на двое суток</td>
+                            <td class="table__point table__point_dark">4 000<br>4 500</td>
+                            <td class="table__point table__point_dark">33 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Белая белка<br><span>20 мест</span></th>
+                            <td class="table__point table__point_dark">Трехместный<br>Четырехместный</td>
+                            <td class="table__point table__point_dark">4 номера<br>2 номеров</td>
+                            <td class="table__point table__point_dark">3 500<br>4 500</td>
+                            <td class="table__point table__point_dark">22 000</td>
+                            <td class="table__point table__point_dark">4 500<br>5 500</td>
+                            <td class="table__point table__point_dark">28 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Лисья нора<br><span>6 мест</span></th>
+                            <td class="table__point table__point_dark">Двухместный</td>
+                            <td class="table__point table__point_dark">3 номера</td>
+                            <td class="table__point table__point_dark">3 700</td>
+                            <td class="table__point table__point_dark">10 000</td>
+                            <td class="table__point table__point_dark">4 700</td>
+                            <td class="table__point table__point_dark">13 500</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Сова<br><span>8 мест</span></th>
+                            <td class="table__point table__point_dark">Двухместный</td>
+                            <td class="table__point table__point_dark">4 номера</td>
+                            <td class="table__point table__point_dark">3 700</td>
+                            <td class="table__point table__point_dark">14 000</td>
+                            <td class="table__point table__point_dark">4 700</td>
+                            <td class="table__point table__point_dark">18 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Олений ручей<br><span>8 мест</span></th>
+                            <td class="table__point table__point_dark">Двухместный</td>
+                            <td class="table__point table__point_dark">6 номера</td>
+                            <td class="table__point table__point_dark">4 500</td>
+                            <td class="table__point table__point_dark">25 500</td>
+                            <td class="table__point table__point_dark">5 500</td>
+                            <td class="table__point table__point_dark">34 000</td>
+                        </tr>
+        
+                        <tr>
+                            <th class="table__top table__top_dark" scope="row">Ski Motel<br><span>96 мест</span></th>
+                            <td class="table__point table__point_dark">Двухместный<br>Трехместный<br>Четырехместный</td>
+                            <td class="table__point table__point_dark">12 номеров<br>13 номеров<br>6 номеров</td>
+                            <td class="table__point table__point_dark">1 900 <span>(800 место)</span><br>2 500 <span>(800 место)</span><br>3 000 <span>(800 место)</span></td>
+                            <td class="table__point table__point_dark">-</td>
+                            <td class="table__point table__point_dark">2 500 <span>(1000 место)</span><br>3 000 <span>(1000 место)</span><br>3 500 <span>(1000 место)</span></td>
+                            <td class="table__point table__point_dark">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="tags__list tags__list_dark">
+                <li class="tags__point tags__point_dark">Примечания:</li>
+                <li class="tags__point tags__point_dark">1. Гостиница предоставляет Гостям номера для временного проживания.</li>
+                <li class="tags__point tags__point_dark">2. Режим работы гостиницы – круглосуточный. Время заезда - с 15.00 часов местного времени, время отъезда до 14.00 (в зимний период), время заезда - с 14.00 часов местного времени, время отъезда до 13.00 часов местного времени (в летний период).</li>
+                <li class="tags__point tags__point_dark">3. При заселении Гостю необходимо иметь при себе документ, удостоверяющий личность, заполнить и подписать анкету, установленного образца, сдать анкету администратору По окончанию периода проживания Гостю необходимо уведомить администратора о выезде из номера и сдать ключи.</li>
+                <li class="tags__point tags__point_dark"> 4. В целях соблюдения правил пожарной безопасности гостям, проживающим в гостиницах, запрещается:</li>
+                <li class="tags__point tags__point_dark">- Пользоваться в номерах нештатными электронагревательными приборами, удлинителями, переходниками и т.д. Микроволновой печью и чайником можно воспользоваться в специальной кухонной зоне.</li>
+                <li class="tags__point tags__point_dark">- Хранить и приносить в номера огнеопасные и легковоспламеняющиеся материалы, ядовитые вещества.</li>
+                <li class="tags__point tags__point_dark">- Не оставляйте в гостинице ценные предметы.</li>
+                <li class="tags__point tags__point_dark">- Уходя из номера, оставлять включенными электроприборы.</li>
+                <li class="tags__point tags__point_dark">- Курить в номерах на территории гостиниц. Основание- закон №15-ФЗ «Об охране здоровья граждан от воздействия окружающего табачного дыма и последствий потребления табака». - Пользоваться в номерах и общественных зонах - кальяном.</li>
+                <li class="tags__point tags__point_dark">- Оставлять посторонних лиц в номере в своё отсутствие.</li>
+                <li class="tags__point tags__point_dark">- Находиться посторонним лицам в гостиничном номере с 23-00 до наступления расчетного часа без предъявления документа, удостоверяющего его личность. При   несоблюдении правил пребывание в гостинице может быть ограничено или прервано. </li>
+                <li class="tags__point tags__point_dark">- Нарушать покой проживающих после 23.00. </li>
+                <li class="tags__point tags__point_dark">- Нарушать санитарные нормы и требования в гостиничном номере. </li>
+                <li class="tags__point tags__point_dark">- Выбрасывать мусор, бутылки и другие предметы из окон гостиниц.</li>
+                <li class="tags__point tags__point_dark">- Выносить белье, полотенца и инвентарь из номера.</li>
+                <li class="tags__point tags__point_dark">- Размещение животных в гостиницах категорически запрещено.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="footer__contacts">
+            <div class="footer__contacts-title">Контакты</div>
+            <div class="footer__contacts-address">618206, Пермский край, г. Чусовой, ул. Мира, 17, оф. 401</div>
+            <a href="#" class="footer__contacts-email">takman59@mail.ru</a href="#">
+            <a href="#" class="footer__contacts-phone">+7 (342) 256-95-83</a href="#">
+        </div>
+
+        <div class="footer__main">
+            <img class="footer__main-logo" src="img/logo.svg" alt="logo">
+            <img class="footer__main-logodark" src="img/logo_dark.svg" alt="logo">
+            <a href="#" class="footer__main-link footer__main-link_dark">Правила пользования услугами курорта</a>
+            <a href="#" class="footer__main-link footer__main-link_dark">Политика в отношении обработки персональных данных</a>
+            <p class="footer__main-copyright footer__main-copyright_dark">© ООО «Движение» 2023. Все права защищены.</p>
+        </div>
+    </section><!--/footer-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/hystmodal.min.js"></script>
+</body>
+</html>
